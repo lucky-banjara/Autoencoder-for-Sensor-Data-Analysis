@@ -1,12 +1,113 @@
-# Ignore virtual environments
+
+# ==========================================
+# HBTA Autoencoder Project - Git Ignore
+# ==========================================
+
+# Python virtual environments
 .venv/
 venv/
+env/
 ENV/
+virtualenv/
 
-# Ignore large data and model files
-*.csv
-*.json
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS and editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# HBTA DATASET AND PROCESSED ARRAYS
+# ==========================================
+
+# Large raw sensor datasets
 *.h5
-*.pth
-*.pkl
+*.hdf5
+*.hdf
 *.npy
+*.npz
+
+# Serialized preprocessing objects
+*.pkl
+*.pickle
+*.joblib
+
+# Ignore generated data directories
+data/processed/
+data/processed_global/
+
+# ==========================================
+# TRAINED MODELS
+# ==========================================
+
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ==========================================
+# GENERATED EXPERIMENT OUTPUTS
+# ==========================================
+
+# Large logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Generated result files
+results/**/*.npy
+results/**/*.npz
+results/**/*.pkl
+results/**/*.pth
+
+# ==========================================
+# OPTIONAL LOCAL ARCHIVES
+# ==========================================
+
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ==========================================
+# KEEP SOURCE AND DOCUMENTATION
+# ==========================================
+
+# Do not ignore:
+# src/
+# README.md
+# requirements.txt
+# .gitignore
+# docs/
+# documentation/
+# results/*.csv
+# results/*.png
