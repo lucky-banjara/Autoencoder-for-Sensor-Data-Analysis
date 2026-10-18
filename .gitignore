@@ -111,3 +111,14 @@ results/**/*.pth
 # documentation/
 # results/*.csv
 # results/*.png
+
+# ==========================================
+# LARGE INTERMEDIATE CSV RESULTS
+# ==========================================
+
+# Window-level reconstruction outputs
+results/damage_evaluation/all_window_reconstruction_errors.csv
+results/reconstruction/validation_reconstruction_errors.csv
+results/uds_all_configurations/uds_all_window_errors.csv
+
+# Keep lightweight summary CSVs eligible for Git tracking
