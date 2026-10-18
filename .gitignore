@@ -1,0 +1,12 @@
+# Ignore virtual environments
+.venv/
+venv/
+ENV/
+
+# Ignore large data and model files
+*.csv
+*.json
+*.h5
+*.pth
+*.pkl
+*.npy
